@@ -1,0 +1,6 @@
+npx --no-install commitlint --edit "$1"
+
+# Add icons for commit
+. "$(dirname "$0")/_/husky.sh"
+.husky/add-icon-commit-msg "$1"
+
