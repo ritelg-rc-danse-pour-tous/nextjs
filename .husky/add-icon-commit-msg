@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# Chemin vers le fichier de message de commit temporaire
+COMMIT_MSG_FILE="$1"
+COMMIT_MSG_CONTENT=$(cat "$COMMIT_MSG_FILE")
+
+# Fonction pour ajouter une icône en fonction du type de commit
+add_icon_to_commit() {
+  case "$1" in
+    feat) ICON="🌟" ;;
+    fix) ICON="🐛" ;;
+    docs) ICON="📚" ;;
+    style) ICON="💅" ;;
+    refactor) ICON="🔨" ;;
+    perf) ICON="🚀" ;;
+    test) ICON="🚨" ;;
+    build) ICON="🛠 " ;;
+    ci) ICON="📦" ;;
+    chore) ICON="🗃" ;;
+    revert) ICON="⏪" ;;
+    wip) ICON="🚧" ;;
+    api) ICON="🌐" ;;
+    data) ICON="📊" ;;
+    *) ICON="" ;;
+  esac
+  
+  echo "${ICON} ${2}"
+}
+
+# Extraire le type du commit (et ignorer le scope s'il est présent)
+if [[ "$COMMIT_MSG_CONTENT" =~ ^([a-z]+)(\(.*\))?: ]]; then
+    TYPE=${BASH_REMATCH[1]}
+    NEW_MSG=$(add_icon_to_commit "$TYPE" "$COMMIT_MSG_CONTENT")
+    echo "$NEW_MSG" > "$COMMIT_MSG_FILE"
+else
+    # Si le message ne correspond pas au format attendu, ne modifiez pas le message.
+    echo "$COMMIT_MSG_CONTENT" > "$COMMIT_MSG_FILE"
+fi

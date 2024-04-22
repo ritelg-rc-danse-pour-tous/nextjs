@@ -1,0 +1,10 @@
+npx pretty-quick --staged
+
+files=$(git diff --cached --name-only --diff-filter=AM -- front/ symfony/)
+
+if [ -n "$files" ]; then
+  if grep -H TODO $files; then
+    echo "Blocking commit as TODO was found."
+    exit 1
+  fi
+fi

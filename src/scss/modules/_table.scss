@@ -1,0 +1,91 @@
+$table-td-bgc: rgba($color-fonce, 0.2) !default;
+$table-tr-border-color: rgba($color-fonce, 0.5) !default;
+$table-tr-shadow-color: rgba($color-fonce, 0.5) !default;
+
+table {
+  margin: 40px 0;
+  width: 100%;
+}
+
+table {
+  color: $color-fonce;
+  margin: 1rem 0;
+  th {
+    text-transform: uppercase;
+  }
+  border-bottom: 1px solid $color-fonce-light;
+  tr {
+    margin-bottom: 5px;
+  }
+}
+
+table th,
+table td {
+  text-align: left;
+  padding: 20px 5px;
+}
+table tbody tr:nth-child(odd) {
+  background-color: rgba($color-fonce, 0.1);
+}
+
+@include media-max {
+  table,
+  th,
+  thead,
+  tbody,
+  td,
+  tr {
+    display: block;
+  }
+  table tr:first-child {
+    display: none;
+  }
+
+  table tbody tr {
+    margin: 10px 0;
+    border: 1px solid $table-tr-border-color;
+    border-radius: 5px;
+    box-shadow: 0 0 5px $table-tr-shadow-color;
+    &:nth-child(n) {
+      background: #fff !important;
+      padding: 0 !important;
+    }
+    & td:nth-child(odd) {
+      background-color: $table-td-bgc;
+    }
+    td {
+      position: relative;
+      padding: 1rem 0 1rem 11rem;
+      margin-bottom: 1px;
+    }
+    td:before {
+      content: attr(data-label);
+      color: #fff;
+      padding: 5px;
+      background-color: $color-fonce;
+      position: absolute;
+      text-transform: uppercase;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 10rem;
+    }
+  }
+}
+
+@include media-max($width: 500px) {
+  table tbody tr td {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 1px;
+    line-height: 2rem;
+  }
+
+  table tbody tr td:before {
+    display: block;
+    position: relative;
+    padding: 5px;
+    line-height: 1rem;
+    width: 100%;
+  }
+}

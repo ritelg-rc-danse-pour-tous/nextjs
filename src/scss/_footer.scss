@@ -1,0 +1,76 @@
+/***************\
+    Footer
+\***************/
+
+.footer {
+  background-color: $color-fonce;
+  margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: $gris-clair;
+  @extend %container;
+  text-align: center;
+  & h2 {
+    color: inherit;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  & h2::after {
+    display: none;
+  }
+  p,
+  .pages a {
+    margin: 0 0 0.5rem 0;
+    display: block;
+  }
+}
+.footer .infos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  h2 {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: $width-desktop-l) {
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-align: left;
+    & h2 {
+      text-align: left;
+    }
+  }
+  .footer .infos {
+    align-items: flex-start;
+    h2 {
+      margin-top: 0;
+    }
+  }
+}
+
+//============================================
+//		Icones
+//============================================
+
+.socials-links {
+  display: flex;
+
+  & a {
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+    &:last-child {
+      margin-right: 0;
+    }
+    img {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

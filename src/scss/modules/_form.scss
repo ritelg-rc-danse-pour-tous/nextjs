@@ -1,0 +1,198 @@
+$padding-input: 0.7rem;
+
+.form-group {
+  margin-bottom: 1rem;
+}
+input {
+  border: 1px solid $color-fonce;
+  margin: $padding-input 0 0 0;
+  margin: 0;
+  border-radius: $border-radius;
+  width: 100%;
+  background-color: transparent;
+  line-height: 1.15;
+  padding: $padding-input;
+}
+
+textarea {
+  resize: vertical;
+  width: 100%;
+  min-height: 150px;
+  border: 1px solid $color-fonce;
+  border-radius: $border-radius;
+  padding: $padding-input;
+  background-color: transparent;
+  height: 3rem;
+}
+
+select {
+  margin: 10px 0 20px 0;
+  background-color: transparent;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid $color-fonce !important;
+  width: 100%;
+}
+
+form {
+  margin: 30px auto;
+  width: 60%;
+}
+.btn {
+  cursor: pointer;
+  background-color: $color-fonce;
+  color: #fff;
+  border-radius: 5px;
+  height: auto;
+  margin: 15px 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 36px;
+  padding: 0 10px;
+  transition-property: color, background-color;
+  font-family: $premiere-police;
+  border: none;
+}
+.btn:hover {
+  background-color: $color-alt;
+}
+.btn-event {
+  padding: 5px 10px;
+  text-transform: capitalize;
+}
+input,
+textarea,
+label,
+select {
+  color: $color-fonce;
+  font-size: 1.1em;
+  font-weight: 200;
+  font-family: $premiere-police;
+}
+::placeholder,
+::-moz-placeholder,
+::-webkit-input-placeholder,
+::-ms-input-placeholder {
+  color: $color-fonce;
+  font-size: 1.1em;
+  font-weight: 400;
+  font-family: $premiere-police;
+}
+textarea::placeholder {
+  padding: $padding-input;
+}
+.bgc-fonce ::placeholder,
+::-moz-placeholder,
+::-webkit-input-placeholder,
+::-ms-input-placeholder {
+  color: white;
+}
+.bgc-fonce input,
+.bgc-fonce textarea,
+.bgc-fonce label,
+.bgc-fonce select,
+.bgc-fonce a {
+  color: white;
+}
+
+.bgc-fonce input,
+.bgc-fonce textarea {
+  border-color: white;
+}
+
+form div.form-errors {
+  width: 100%;
+  display: block;
+  background-color: rgba(#f00, 0.7);
+  color: #fff;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+input.input-invalid {
+  border-bottom: 1px solid rgba(#f00, 0.7);
+}
+.invalid-feedback {
+  color: darken($danger-background, 20%);
+  font-family: $premiere-police;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+@include media-max {
+  form {
+    width: 80%;
+  }
+  input,
+  select {
+    display: block;
+  }
+  form div,
+  form div,
+  form div {
+    margin: 30px 0;
+  }
+
+  .form-image {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.form-icon {
+  position: relative;
+}
+.form-icon .icon {
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  transform: translateY(-50%);
+  color: rgba($color-fonce, 0.6);
+  height: 1rem;
+  width: auto;
+}
+.form-icon input {
+  padding-left: 2.2rem;
+}
+.form-input,
+.form-group-textarea {
+  position: relative;
+}
+.form-input.icon-present label {
+  left: 2.2rem;
+}
+.form-input input:focus + label,
+.form-input.not-empty label,
+.form-group-textarea label {
+  position: absolute;
+  background-color: $gris-clair;
+  top: 0;
+  left: $padding-input;
+  padding: 0.2rem;
+  transform: translate3d(0, -50%, 0);
+  color: $color-fonce;
+}
+.form-input label {
+  position: absolute;
+  left: $padding-input;
+  top: 50%;
+  pointer-events: none;
+  transform: translate3d(0, -50%, 0);
+  color: rgba($color-fonce, 0.6);
+}
+
+.btn > svg,
+.btn > span {
+  margin-right: 0.5rem;
+}
+
+// Remove autofill background color
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 500000000s ease-in-out 0s;
+}
