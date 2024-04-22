@@ -1,0 +1,199 @@
+//============================================
+//		Navbar
+//============================================
+
+.top-navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  @extend %container;
+}
+.nav-logo,
+.nav-btn-menu {
+  display: block;
+  height: 3rem;
+  width: 3rem;
+  background: url($logo) center / 60% no-repeat;
+}
+.nav-btn-menu {
+  display: block;
+  height: 3rem;
+  width: 3rem;
+  border: none;
+  background: url($menu-hamburger) center / 60% no-repeat;
+}
+
+.top-navbar ul {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  background-color: darken($color-alt, 35%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 2px 0 6px $color-fonce-light2;
+  transform: translate3d(-100%, 0, 0);
+  padding-top: 3rem;
+  font-size: 1.2rem;
+  & > li {
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 2rem;
+    & > a {
+      display: block;
+    }
+  }
+  &.active {
+    transform: translate3d(0, 0, 0);
+  }
+  li button.close {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    padding: 0.5rem;
+    width: auto;
+    font-family: monospace;
+    background: none;
+    color: #fff;
+    font-size: 2rem;
+    box-shadow: none;
+    border: none;
+  }
+}
+
+@media screen and (min-width: $width-tablet) {
+  .nav-logo,
+  .nav-btn-menu {
+    height: 5rem;
+    width: 5rem;
+  }
+  .nav-btn-menu {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
+@media screen and (min-width: $width-desktop) {
+  .top-navbar {
+    flex-direction: row;
+  }
+  .top-navbar ul {
+    position: relative;
+    transform: none;
+    flex-direction: row;
+    box-shadow: none;
+    background-color: transparent;
+    width: auto;
+    color: $color-fonce;
+    padding-top: 0;
+    li button.close {
+      display: none;
+    }
+    li {
+      transition: color 0.3s;
+    }
+    li:hover {
+      color: $color-alt;
+      text-decoration: underline;
+    }
+  }
+  .nav-btn-menu {
+    display: none;
+  }
+  .nav-logo {
+    height: 6rem;
+    width: 6rem;
+    &:hover {
+      transform: scale3d(1.1, 1.1, 1);
+    }
+  }
+}
+
+//============================================
+//		Header
+//============================================
+
+.banner {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @extend %container;
+}
+
+.header-show {
+  .image {
+    margin: 1rem;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
+
+.banner h1 {
+  color: $color-alt;
+  display: block;
+  margin-top: 0;
+  text-align: center;
+}
+.banner h1 > span {
+  display: block;
+  color: $color-fonce;
+}
+
+.banner .infos {
+  margin-top: 2rem;
+  p {
+    margin-bottom: 0.5rem;
+    font-size: 1.1em;
+  }
+}
+
+.illustration-danseurs {
+  display: block;
+  width: 40%;
+  height: auto;
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: $width-tablet) {
+  .illustration-danseurs {
+    width: 30%;
+    margin: 2rem 0;
+  }
+}
+
+@media screen and (min-width: $width-desktop) {
+  .banner {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .banner h1 {
+    text-align: left;
+  }
+  .illustration-danseurs {
+    margin: 0 0 0 5rem;
+  }
+
+  .banner.header-event-show {
+    margin: 4rem 0;
+    flex-direction: row;
+    justify-content: space-between;
+    & > div {
+      width: 49%;
+    }
+    & > .image {
+      width: 45%;
+      margin: 0;
+    }
+  }
+}

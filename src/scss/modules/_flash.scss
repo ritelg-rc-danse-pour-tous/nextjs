@@ -1,0 +1,23 @@
+.flash {
+  width: 60%;
+  color: white;
+  margin: 30px auto;
+}
+.flash-message {
+  border-radius: 5px;
+  padding: 15px 20px;
+}
+.flash-message.flash-danger {
+  background-color: $danger-background;
+  color: $danger-text;
+}
+.flash-message.flash-success {
+  background-color: $succes-background;
+  color: $succes-text;
+}
+.flash-large {
+  width: 100%;
+}
+.header-admin .flash {
+  width: 100%;
+}

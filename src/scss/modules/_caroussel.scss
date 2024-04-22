@@ -1,0 +1,42 @@
+$width-btn-pagination: 40px;
+$height-btn-pagination: $width-btn-pagination;
+
+.caroussel {
+  width: 100%;
+  position: relative;
+}
+.caroussel-fake-container {
+  overflow-x: hidden;
+}
+.caroussel-container {
+  @include clearfix;
+}
+.caroussel-item {
+  float: left;
+  padding: 10px;
+  &:first-child {
+    padding-left: 0;
+  }
+}
+
+.caroussel-prev,
+.caroussel-next {
+  width: $width-btn-pagination;
+  height: $height-btn-pagination;
+  position: absolute;
+  top: calc(50% - 20px);
+  left: -60px;
+  z-index: 1;
+  border-radius: 50%;
+  transition: transform 0.3s;
+  cursor: pointer;
+  background: url($svg-left) center center / cover no-repeat;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.caroussel-next {
+  background: url($svg-right) center center / cover no-repeat;
+  right: -50px;
+  left: auto;
+}

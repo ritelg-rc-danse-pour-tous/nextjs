@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Chrome",
+      "type": "pwa-chrome",
+      "request": "launch",
+      "url": "http://192.168.1.17:3000",
+      "webRoot": "${workspaceFolder}/front"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Next.js",
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/next",
+      "cwd": "${workspaceRoot}",
+      "runtimeArgs": ["dev"],
+      // "port": 9229,
+      "console": "integratedTerminal",
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "!**/node_modules/**"
+      ]
+    }
+  ]
+}

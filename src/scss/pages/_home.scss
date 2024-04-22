@@ -1,0 +1,247 @@
+//============================================
+//		Accueil
+//============================================
+
+//============================================
+//		Cours
+//============================================
+section.cours {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+section.cours > div:not(figure) {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+section.cours figure {
+  width: 80%;
+  & > img {
+    width: 100%;
+    height: auto;
+  }
+  figcaption {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+  }
+}
+@media screen and (min-width: $width-desktop) {
+  section.cours > *:not(figure) {
+    width: 100%;
+  }
+  section.cours figure {
+    &:nth-of-type(1) {
+      width: 60%;
+    }
+    &:nth-of-type(2) {
+      width: 35%;
+    }
+    & > img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+//============================================
+//		Events
+//============================================
+
+.home-events-container {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  @extend %container;
+}
+.home-events img {
+  max-width: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.home-events h2 {
+  text-align: left;
+  color: $color-alt;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  &:after {
+    display: none;
+  }
+}
+.home-events .event-date {
+  font-style: italic;
+  color: lighten($color-fonce, 10%);
+  font-family: $second-police;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: ($width-desktop-l - 1)) {
+  .home-events .content {
+    padding: 1rem;
+  }
+  .home-events {
+    // background: #fff;
+    // border-radius: $border-radius;
+    // box-shadow: $box-shadow;
+    overflow: hidden;
+    img {
+      max-width: 40%;
+      display: block;
+    }
+    h2,
+    .event-date,
+    p {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .home-events .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (min-width: $width-desktop-l) {
+  .home-events {
+    display: flex;
+    justify-content: space-between;
+  }
+  .home-events > div {
+    width: 48%;
+  }
+  .home-events img {
+    width: 50%;
+  }
+}
+
+//============================================
+//		Gallerie
+//============================================
+.home-gallerie {
+  margin: 4rem auto;
+}
+.home-gallerie > div {
+  width: 100%;
+  background-color: #151515;
+}
+.home-gallerie > div > img {
+  width: 100%;
+  height: auto;
+}
+.home-gallerie .home-flex {
+  display: flex;
+  img {
+    height: auto;
+  }
+  & > * {
+    width: 50%;
+  }
+  & div img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: $width-desktop-l) {
+  .home-gallerie {
+    display: flex;
+    flex-wrap: wrap;
+    & > div {
+      width: 50%;
+    }
+  }
+}
+
+//============================================
+//		CONTACT
+//============================================
+.home-contact {
+  @extend %container;
+  margin: 4rem auto;
+}
+.home-contact form {
+  width: 100%;
+  // overflow: hidden;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.home-contact .btn {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: $width-desktop) {
+  .home-contact form {
+    margin: 2rem auto;
+  }
+}
+@media screen and (min-width: $width-desktop) {
+  .home-contact {
+    display: flex;
+  }
+  .home-contact h2 {
+    text-align: left;
+    margin-top: 0;
+    &:after {
+      margin-left: 0;
+      width: 35%;
+    }
+  }
+  .home-contact > div {
+    margin-right: 5rem;
+  }
+}
+
+.home-contact .btn {
+  &.send {
+    // background: darken($succes-hover, 15);
+    // color: $color-clair;
+  }
+  $animation-duration: 2s;
+  &.sending svg {
+    animation: $animation-duration sending_button ease-out;
+    z-index: 2;
+  }
+  &.sending {
+    position: relative;
+    overflow: hidden;
+  }
+  &.sending span {
+    background-color: $color-alt;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    animation: 1.5s sending_span ease-out;
+  }
+}
+@keyframes sending_span {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes sending_button {
+  0% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  20% {
+    transform: rotate3d(0, 0, 1, 45deg);
+  }
+  100% {
+    transform: translate3d(10rem, 0, 0);
+  }
+}
