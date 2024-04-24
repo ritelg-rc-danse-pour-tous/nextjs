@@ -3,7 +3,7 @@
 import Link from "@/components/ui/link";
 import { useRef } from "react";
 
-export default function Nav({ endpoint }: { endpoint: string | undefined }) {
+export default function Nav() {
   const ulRef = useRef<HTMLUListElement>(null);
 
   function toggleMenuMobile(e: React.MouseEvent<HTMLElement, MouseEvent>) {
