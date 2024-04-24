@@ -3,7 +3,7 @@
 import Link from "@/components/ui/link";
 import { useRef } from "react";
 
-export default function Nav({ endpoint }: { endpoint: string }) {
+export default function Nav() {
   const ulRef = useRef<HTMLUListElement>(null);
 
   function toggleMenuMobile(e: React.MouseEvent<HTMLElement, MouseEvent>) {
@@ -36,10 +36,15 @@ export default function Nav({ endpoint }: { endpoint: string }) {
           </Link>
         </li>
         <li>
+          <Link href="/#nos-cours" onClick={removeActive}>
+            Nos cours
+          </Link>
+        </li>
+        {/* <li>
           <Link href="/#contact" onClick={removeActive}>
             Contact
           </Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

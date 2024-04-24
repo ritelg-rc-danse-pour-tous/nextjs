@@ -1,4 +1,4 @@
-import { ContactForm } from "@/components/common";
+import { ContactForm, Nav } from "@/components/common";
 import { SVGIcon, VideoYoutube } from "@/components/ui";
 import { env } from "@/utils/env";
 import type { Metadata } from "next";
@@ -31,7 +31,28 @@ export const metadata: Metadata = {
 export default async function Home() {
   return (
     <>
-      <header className="banner">
+      <header className="header">
+        <Nav />
+        <div className="banner">
+          <h1>
+            <span>Bienvenue dans la</span> Danse
+          </h1>
+          <p>
+            Plongez dans l’univers envoûtant de la danse avec notre association
+            ! <br />
+            De la sensualité de la bachata à l’énergie du rock, en passant par
+            la chaleur de la salsa et l’élégance de la kizomba, nous vous
+            invitons à explorer, apprendre et partager votre passion pour la
+            danse avec nous.
+            <br /> Rejoignez-nous pour des moments inoubliables et laissez-vous
+            emporter par le rythme et la magie de nos cours et événements !
+          </p>
+          <a href="/#contact-form" className="btn">
+            Nous contacter
+          </a>
+        </div>
+      </header>
+      <section className="about container">
         <Image
           src="/images/danseurs-header.jpg"
           className="illustration-danseurs"
@@ -40,9 +61,7 @@ export default async function Home() {
           height={669}
         />
         <div>
-          <h1>
-            <span>Bienvenue dans la</span> Danse
-          </h1>
+          <h2>A propos de nous</h2>
           <p>
             Rose Marie et Carlos LAMEGO, professeurs de Danses passionnés par
             les Danse de Couple, nous enseignons depuis 1991 de nombreuses
@@ -61,36 +80,9 @@ export default async function Home() {
             et St Girons.. Aujourd’hui, nous animons de nombreux évènements afin
             de partager le plaisir de la Danse avec vous !
           </p>
-          <div className="infos">
-            <p>Téléphone : 06.88.51.17.15</p>
-            <p>Email : contact@rc-dansepourtous.fr</p>
-            <div className="socials-links">
-              <a
-                href="https://www.facebook.com/RCDansePourTous"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <SVGIcon name="facebook" />
-              </a>
-              <a
-                href="https://www.youtube.com/@rcdansepourtous"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <SVGIcon name="youtube" />
-              </a>
-              <a
-                href="https://www.instagram.com/rc.danse/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <SVGIcon name="instagram" />
-              </a>
-            </div>
-          </div>
         </div>
-      </header>
-      <section className="cours container">
+      </section>
+      <section className="cours container" id="nos-cours">
         <div>
           <h2>Planning des cours</h2>
           <p>
@@ -109,7 +101,17 @@ export default async function Home() {
             width={700}
             height={394}
           />
-          <figcaption>Planning des cours à MJC de Laroque d’olmes</figcaption>
+          <figcaption>
+            <h3>MJC de Laroque d’olmes</h3>
+            <p>
+              Venez suivre nos cours à la MJC de Laroque d’olmes. Que vous soyez
+              débutant ou avancé, vous trouverais tous les
+            </p>
+            <ul>
+              <li>Lundi : salsa, bachata, rock</li>
+              <li>Mercredi: Salsa, bachata, rock et danse de salon</li>
+            </ul>
+          </figcaption>
         </figure>
         <figure>
           <Image
@@ -118,7 +120,13 @@ export default async function Home() {
             width={509}
             height={720}
           />
-          <figcaption>Planning des cours à Mercus</figcaption>
+          <figcaption>
+            <h3>Mercus - Les Amis du Serbel</h3>
+            <p>
+              Venez suivre nos cours à Mercus. Que vous soyez débutant ou
+              avancé, vous trouverais des cours de Salsa, Rock, Kizomba, Bachata
+            </p>
+          </figcaption>
         </figure>
       </section>
       <section className="home-gallerie">
@@ -251,6 +259,33 @@ export default async function Home() {
             cours particuliers veuillez préciser votre adresse, le nombre de
             personnes ainsi que les danses souhaitées.
           </p>
+          <div className="infos">
+            <p>Téléphone : 06.88.51.17.15</p>
+            <p>Email : contact@rc-dansepourtous.fr</p>
+            <div className="socials-links">
+              <a
+                href="https://www.facebook.com/RCDansePourTous"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <SVGIcon name="facebook" />
+              </a>
+              <a
+                href="https://www.youtube.com/@rcdansepourtous"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <SVGIcon name="youtube" />
+              </a>
+              <a
+                href="https://www.instagram.com/rc.danse/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <SVGIcon name="instagram" />
+              </a>
+            </div>
+          </div>
         </div>
         <ContactForm endpoint={`${env.NEXTAUTH_URL}/api/contact`} />
       </section>
