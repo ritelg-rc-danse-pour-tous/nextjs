@@ -1,7 +1,61 @@
+section.about,
+section.cours,
+section.home-gallerie,
+section.home-contact {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: $width-desktop) {
+  section.about,
+  section.cours,
+  section.home-gallerie,
+  section.home-contact {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+}
 //============================================
-//		Accueil
+//		About
 //============================================
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
 
+.about h2 {
+  display: inline-block;
+  margin-top: 0;
+}
+.illustration-danseurs {
+  display: block;
+  width: 40%;
+  height: auto;
+}
+
+@media screen and (min-width: $width-tablet) {
+  .illustration-danseurs {
+    width: 30%;
+  }
+}
+@media screen and (max-width: $width-desktop) {
+  .about > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: $width-desktop) {
+  .about {
+    gap: 3rem;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+  .about h2:after {
+    margin: 0;
+  }
+}
 //============================================
 //		Cours
 //============================================
@@ -12,6 +66,9 @@ section.cours {
   flex-wrap: wrap;
   gap: 2rem;
 }
+section.cours h2 {
+  margin-top: 0;
+}
 section.cours > div:not(figure) {
   width: 100%;
   display: flex;
@@ -21,14 +78,37 @@ section.cours > div:not(figure) {
 }
 section.cours figure {
   width: 80%;
+  background: #f1f1f1;
+  overflow: hidden;
+  border-radius: $border-radius;
   & > img {
     width: 100%;
     height: auto;
   }
-  figcaption {
-    text-align: center;
-    font-size: 1.2rem;
-    padding-top: 0.5rem;
+}
+section.cours figcaption {
+  text-align: center;
+  // font-size: 1.2rem;
+  padding: 1rem;
+  text-align: left;
+  h3 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    color: inherit;
+  }
+  h3:after {
+    display: none;
+  }
+  ul {
+    padding-left: 1rem;
+  }
+  li {
+    font-family: $premiere-police;
+    list-style: outside;
+    margin-bottom: 0.5rem;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 }
 @media screen and (min-width: $width-desktop) {

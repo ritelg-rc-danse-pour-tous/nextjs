@@ -21,13 +21,14 @@ h3 {
   margin: 2rem auto;
   color: $color-fonce;
   font-size: math.pow($factor-size-mobile, 2) + rem;
+  display: inline-block;
 }
 h2::after,
 h3::after {
   display: block;
   content: "";
   height: 2px;
-  width: 20%;
+  width: 50%;
   background-color: $color-alt;
   margin: 0 auto;
 }
@@ -71,10 +72,6 @@ p {
   %h2,
   h2 {
     font-size: math.pow($factor-size-desktop, 2) + rem;
-  }
-  h2::after,
-  h3::after {
-    width: 10%;
   }
   h3 {
     font-size: ($factor-size-desktop) + rem;
