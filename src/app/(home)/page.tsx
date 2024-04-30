@@ -248,6 +248,35 @@ export default async function Home() {
             show={true}
           />
         </div>
+        <div className="flex-row">
+          <Image
+            src="/images/fiesta-latino-1.jpg"
+            alt="Fanny & Denis"
+            width={600}
+            height={338}
+          />
+          <div className="home-flex">
+            <Image
+              src="/images/fanny-denis.jpg"
+              alt="Fanny & Denis"
+              width={500}
+              height={563}
+            />
+            <div>
+              <Image
+                src="/images/carlos-1.jpg"
+                alt="Fanny & Denis"
+                width={600}
+                height={338}
+              />
+              <VideoYoutube
+                id="7wXmKP9sDqw?si=nYJmyqqWUWhh4QqE"
+                title="Stage de kizomba avec Rose et Carlos - Saint Girons"
+                show={true}
+              />
+            </div>
+          </div>
+        </div>
       </section>
       <section className="home-contact" id="contact-form">
         <div>
