@@ -7,6 +7,7 @@ export const env = createEnv({
     NEXTAUTH_URL: z.string().url(),
     MAILER_TO: z.string(),
     MAILER_FROM: z.string(),
+    RESEND_API_KEY: z.string(),
     // NEXT_ENV: z.string(),
   },
   client: {
