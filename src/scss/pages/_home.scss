@@ -238,6 +238,13 @@ section.cours figcaption {
     & > div {
       width: 50%;
     }
+    & > div.flex-row {
+      width: 100%;
+      display: flex;
+    }
+    & > div.flex-row > * {
+      width: 50%;
+    }
   }
 }
 
