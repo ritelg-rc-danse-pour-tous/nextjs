@@ -34,7 +34,7 @@ export default function ContactTemplate({ from, subject, message }: Props) {
         <Body className="bg-slate-200 m-10">
           <Container className="bg-white p-10 rounded-lg shadow-lg text-center">
             <Img
-              src={`https://rc-dansepourtous.fr/images/logo-fonce.svg`}
+              src={`https://rc-dansepourtous.fr/images/logo-black.svg`}
               alt="Linear logo"
               className="mx-auto w-24"
             />
