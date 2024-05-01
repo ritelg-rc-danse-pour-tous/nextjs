@@ -21,6 +21,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <Favicons />
+        <script src="/app.js" defer></script>
       </head>
       <body suppressHydrationWarning={true}>
         <MainLayout>{children}</MainLayout>
