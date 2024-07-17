@@ -82,6 +82,56 @@ export default async function Home() {
           </p>
         </div>
       </section>
+      <section className="events container">
+        {/* <h2>Nos Évènements</h2> */}
+        <figure>
+          <div className="events-flex">
+            <Image
+              src={"/images/planning-2024.jpg"}
+              alt="Évènements à venir"
+              width={700}
+              height={495}
+            />
+            <Image
+              src={"/images/monts-olmes-2024.jpg"}
+              alt="Planning mont d’olmes"
+              width={600}
+              height={497}
+            />
+          </div>
+          <figcaption>
+            <h2>Évènements à venir</h2>
+            <p>
+              Découvrez nos évènements à venir et rejoignez-nous pour des
+              soirées de danse inoubliables ! Que vous soyez débutant ou
+              passionné, venez partager votre amour de la danse avec nous et
+              profiter de moments de partage et de convivialité.
+            </p>
+            <ul>
+              <li>
+                <strong>24 Mai</strong> : Pratique danse à Laroque d’Olmes à
+                partir de 21h
+              </li>
+              <li>
+                <strong>21 Juin</strong> : Fêtes de la musique carnavalesque à
+                Laroque d’Olmes à partir de 18h
+              </li>
+              <li>
+                <strong>28 Juin</strong> : Assemblé générale de R&C Danse pour
+                tous et cloture par un pot de l’amitié et quelques pas de danse
+                à 20h30, à la MJC de Laroque d’Olmes
+              </li>
+              <li>
+                <strong>À partir de mi-juillet</strong> : Tous les vendredi à
+                partir de 18h30, pratique et animations en plein air au pied des
+                pistes du Monts d’Olmes.
+                <br />
+                Informations complémentaires à venir.
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+      </section>
       <section className="cours container" id="nos-cours">
         <div>
           <h2>Planning des cours</h2>
