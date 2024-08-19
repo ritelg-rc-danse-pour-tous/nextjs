@@ -159,7 +159,7 @@ export default async function Home() {
             </p>
             <ul>
               <li>Lundi : salsa, bachata, rock</li>
-              <li>Mercredi: Salsa, bachata, rock et danse de salon</li>
+              <li>Mercredi: Salsa, bachata, Kizomba, rock et danse de salon</li>
             </ul>
           </figcaption>
         </figure>
