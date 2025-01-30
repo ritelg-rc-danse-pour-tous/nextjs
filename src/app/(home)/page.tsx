@@ -109,24 +109,33 @@ export default async function Home() {
             </p>
             <ul>
               <li>
-                <strong>24 Mai</strong> : Pratique danse à Laroque d’Olmes à
-                partir de 21h
+                <strong>02 Février</strong> : Grand Thé dansant <br /> 14h30:
+                Initiation danse (5€) <br /> 15h30: Thé dansant avec gouter
+                (15€) <br />
+                Château de Roques, 09500, Teilhet <br /> Informations et
+                réservations au 06.82.90.13.18
               </li>
               <li>
-                <strong>21 Juin</strong> : Fêtes de la musique carnavalesque à
-                Laroque d’Olmes à partir de 18h
+                <strong>15 Février</strong> : Soirée SBK, Rock, Swing 20h :
+                Musicalité avec Élodie (5€) <br />
+                21h : Soirée (7€ boissons comprises) <br />
+                Prayols (Foix)
               </li>
               <li>
-                <strong>28 Juin</strong> : Assemblé générale de R&C Danse pour
-                tous et cloture par un pot de l’amitié et quelques pas de danse
-                à 20h30, à la MJC de Laroque d’Olmes
+                <strong>1er Mars</strong> : Soirée SBK, Rock, Swing <br />
+                20h : Initiation danse (5€) <br />
+                21h : Repas buffet froid, boissons et soirée (25€) <br />
+                Château de Roques, 09500, Teilhet <br /> Informations et
+                réservations au 06.82.90.13.18
               </li>
               <li>
-                <strong>À partir de mi-juillet</strong> : Tous les vendredi à
-                partir de 18h30, pratique et animations en plein air au pied des
-                pistes du Monts d’Olmes.
-                <br />
-                Informations complémentaires à venir.
+                <strong>22 Mars</strong> : Printemps de la danse <br />
+                11 Cours de danses <br />
+                Soirée dansante SBK, Rock, Swing <br />
+                6 Profs de danses <br />
+                2 DJ Matthieu et Carlos <br />
+                Des musiciens : Trio Bergin de Laroque d’olmes MJC de Laroque
+                d’Olmes <br />
               </li>
             </ul>
           </figcaption>
