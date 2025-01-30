@@ -87,7 +87,7 @@ export default async function Home() {
         <figure>
           <div className="events-flex">
             <Image
-              src={"/images/planning-2024.jpg"}
+              src={"/images/calendrier-1er-2025.jpg"}
               alt="Évènements à venir"
               width={700}
               height={495}
