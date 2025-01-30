@@ -182,10 +182,10 @@ export default async function Home() {
       <section className="home-gallerie">
         <div>
           <Image
-            src="/images/rose-carlos-1.jpg"
+            src="/images/rose-carlos-01.jpg"
             alt="Rose et carlos"
-            width={500}
-            height={281}
+            width={1000}
+            height={562}
           />
           <div className="home-flex">
             <Image
@@ -234,10 +234,10 @@ export default async function Home() {
           </div>
 
           <Image
-            src="/images/IMG_4508.jpg"
+            src="/images/rose-carlos-02.jpg"
             alt="Rose et carlos"
-            width={600}
-            height={675}
+            width={1000}
+            height={562}
           />
         </div>
         <div>
