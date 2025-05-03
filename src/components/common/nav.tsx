@@ -40,6 +40,11 @@ export default function Nav() {
             Nos cours
           </Link>
         </li>
+        <li>
+          <Link href="/qui-sommes-nous" onClick={removeActive}>
+            Qui sommes nous ?
+          </Link>
+        </li>
         {/* <li>
           <Link href="/#contact" onClick={removeActive}>
             Contact

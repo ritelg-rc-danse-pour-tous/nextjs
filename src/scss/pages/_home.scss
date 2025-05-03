@@ -65,43 +65,59 @@ section.events {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
 }
-section.events figure > div {
+section.events figure > img {
+  width: auto;
+  max-height: 500px;
+}
+section.events figure .date,
+section.events figure .address {
   display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-section.events img {
-  max-width: 50%;
-  height: auto;
+  align-items: center;
+  font-weight: 100;
+  font-size: 0.8em;
+  &:first-of-type {
+    margin-right: 0.5rem;
+  }
+  img {
+    width: 0.8rem;
+    opacity: 0.7;
+    margin: 0;
+    margin-right: 0.5rem;
+  }
 }
 section.events figcaption {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-section.events figcaption li {
-  margin-top: 1rem;
-  max-width: 45rem;
-  font-weight: 400;
-  font-family: $premiere-police;
+section.events figcaption > div {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
 }
-section.events h2 {
+section.events h3 {
   display: inline-block;
   margin-top: 1rem;
+  margin-bottom: 0.5rem;
   text-align: center;
+  &:after {
+    display: none;
+  }
 }
 @media screen and (min-width: $width-desktop) {
   section.events {
-    gap: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  section.events h2 {
+    margin-top: 0;
   }
   section.events figure {
     flex-direction: row;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    flex-wrap: wrap;
   }
   section.events figcaption {
     align-items: flex-start;
@@ -111,12 +127,12 @@ section.events h2 {
     border-radius: 5px;
     overflow: hidden;
   }
-  section.events h2 {
-    margin: 2rem auto;
+  section.events h3 {
+    margin: 0;
+    margin-bottom: 0.5rem;
     // text-align: left;
-    &:after {
-      margin-left: 0;
-    }
+  }
+  section.events .date {
   }
 }
 
@@ -129,6 +145,14 @@ section.cours {
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+section.cours > div .light {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9em;
+  font-weight: 100;
 }
 section.cours h2 {
   margin-top: 0;
@@ -141,7 +165,7 @@ section.cours > div:not(figure) {
   // text-align: center;
 }
 section.cours figure {
-  width: 80%;
+  width: 100%;
   background: #f1f1f1;
   overflow: hidden;
   border-radius: $border-radius;
@@ -166,6 +190,9 @@ section.cours figcaption {
   ul {
     padding-left: 1rem;
   }
+  ul:first-of-type {
+    margin-bottom: 1rem;
+  }
   li {
     font-family: $premiere-police;
     list-style: outside;
@@ -174,18 +201,19 @@ section.cours figcaption {
       margin-bottom: 0;
     }
   }
+  ul > strong {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    display: inline-block;
+  }
 }
 @media screen and (min-width: $width-desktop) {
   section.cours > *:not(figure) {
     width: 100%;
   }
   section.cours figure {
-    &:nth-of-type(1) {
-      width: 60%;
-    }
-    &:nth-of-type(2) {
-      width: 35%;
-    }
+    align-items: flex-start;
+    width: 24%;
     & > img {
       width: 100%;
       height: auto;
@@ -203,8 +231,8 @@ section.cours figcaption {
   @extend %container;
 }
 .home-events img {
-  max-width: 100%;
-  width: 100%;
+  width: auto;
+  max-height: 500px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -234,7 +262,8 @@ section.cours figcaption {
     // box-shadow: $box-shadow;
     overflow: hidden;
     img {
-      max-width: 40%;
+      width: auto;
+      max-height: 500px;
       display: block;
     }
     h2,
