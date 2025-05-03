@@ -37,7 +37,7 @@ export default async function Home() {
             <span>Bienvenu dans la</span> Danse
           </h1>
           <p>
-            Plongez dans l’univers envoûtant de la danse avec l'association R&C
+            Plongez dans l’univers envoûtant de la danse avec l’association R&C
             Danse pour tous ! <br />
             De la sensualité de la Bachata à l’énergie du Rock, en passant par
             la chaleur de la Salsa et l’élégance de la Kizomba, nous vous
