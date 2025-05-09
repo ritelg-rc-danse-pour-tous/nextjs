@@ -242,7 +242,7 @@ export default async function about() {
             personnes ainsi que les danses souhaitées.
           </p>
           <div className="infos">
-            <p>Téléphone : 06.88.51.17.15</p>
+            <p>Téléphone : 06.88.51.17.15 / 06.73.52.43.17</p>
             <p>Email : contact@rc-dansepourtous.fr</p>
             <div className="socials-links">
               <a
