@@ -45,6 +45,15 @@ export default async function Home() {
             danse.
             <br /> Rejoignez-nous pour des moments inoubliables et laissez-vous
             emporter par le rythme et la magie de nos cours et événements !
+            <br />
+            <br />
+            <strong>
+              Retour de Yordanis Delgado sur plusieurs stages (salsa, rueda et
+              bachata dominicaine)
+              <br />
+              De nouveaux intervenants en Kizomba et Bachata sensuelle :
+              calendrier et infos à venir.
+            </strong>
           </p>
           <a href="/qui-sommes-nous#contact-form" className="btn">
             Nous contacter
@@ -152,41 +161,97 @@ export default async function Home() {
           </figcaption>
         </figure>
       </section>
-      <section className="events container">
+      <section className="events container home-events">
         <h2>Nos Évènements à venir</h2>
-        <figure>
-          <Image
-            src={"/images/soiree.24.05.25.jpg"}
-            alt="Planning mont d’olmes"
-            width={802}
-            height={1134}
-          />
-          <figcaption>
-            <h3>Soirée 100% danse et repas</h3>
-            <div>
-              <p className="date">
-                <img src="/images/date.svg" alt="" />
-                24 Mai
+        <div>
+          <figure>
+            <Image
+              src={"/images/chateaux-roques/21.jpeg"}
+              alt="Soirée 100%, 100% danse et repas aux chateaux de roques, à 09100 Teilhet"
+              width={802}
+              height={1134}
+            />
+            <figcaption>
+              <h3>Soirée 100% danse et repas</h3>
+              <div>
+                <p className="date">
+                  <img src="/images/date.svg" alt="" />
+                  24 Mai
+                </p>
+                <p className="address">
+                  <img src="/images/address.svg" alt="" />
+                  Chateaux de roques
+                </p>
+              </div>
+              <p>
+                50% Latino Salsa-Bachata-Kizomba <br />
+                50% Rock-Swing <br />
+                Animations, Initiations, Danses en lignes <br />
               </p>
-              <p className="address">
-                <img src="/images/address.svg" alt="" />
-                Chateaux de roques
+              <a href="/events/soiree-chateaux-roques-24-05" className="btn">
+                En savoir plus ?
+              </a>
+            </figcaption>
+          </figure>
+          <figure>
+            <Image
+              src={"/images/laroque-1.jpg"}
+              alt="Fêtes de la musique carnavalesque à Laroque d’olmes"
+              width={802}
+              height={1134}
+            />
+            <figcaption>
+              <h3>Fêtes de la musique</h3>
+              <div>
+                <p className="date">
+                  <img src="/images/date.svg" alt="" />
+                  20 Juin
+                </p>
+                <p className="address">
+                  <img src="/images/address.svg" alt="" />
+                  MJC de Laroque d’Olmes
+                </p>
+              </div>
+              <p>
+                Fêtes de la musique carnavalesque <br />
+                Animations et Démos <br />
+                <strong>Infos à venir</strong>
               </p>
-            </div>
-            <p>
-              50% Latino Salsa-Bachata-Kizomba <br />
-              50% Rock-Swing <br />
-              Animations, Initiations, Danses en lignes <br />
-              Pensez à réserver
-              <br />
-              19h Accueil <br />
-              19h30 Repas <br />
-              21h : Soirée de danse
-              <br />
-              2 DJ Matthieu et Carlos <br />
-            </p>
-          </figcaption>
-        </figure>
+            </figcaption>
+          </figure>
+          <figure>
+            <Image
+              src={"/images/mont-olmes.jpg"}
+              alt="Soirée 100%, 100% danse et repas aux chateaux de roques, à 09100 Teilhet"
+              width={802}
+              height={1134}
+            />
+            <figcaption>
+              <h3>Soirées à thémes</h3>
+              <div>
+                <p className="date">
+                  <img src="/images/date.svg" alt="" />
+                  Juillet et Août
+                </p>
+                <p className="address">
+                  <img src="/images/address.svg" alt="" />
+                  Monts d’Olmes
+                </p>
+              </div>
+              <p>
+                Soirées à thémes - Occitan,Basque,Espagnol,Ambiance du nord
+                <br />
+                Juillet - Août , Tous les vendredi soir
+                <br />
+                Barbecue Géant
+                <br />
+                Animations, Initiations
+                <br />
+                <strong>Infos à venir</strong>
+              </p>
+            </figcaption>
+          </figure>
+        </div>
       </section>
     </>
   );
