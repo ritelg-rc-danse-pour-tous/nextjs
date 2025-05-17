@@ -34,7 +34,7 @@ export default async function Home() {
         <Nav />
         <div className="banner">
           <h1>
-            <span>Bienvenu dans la</span> Danse
+            <span>Bienvenue dans la</span> Danse
           </h1>
           <p>
             Plongez dans l’univers envoûtant de la danse avec l’association R&C

@@ -97,6 +97,12 @@ section.events figure .address {
     margin-right: 0.5rem;
   }
 }
+section.events.home-events {
+  margin-bottom: 2rem;
+}
+section.events.home-events > div {
+  max-width: 100%;
+}
 section.events.home-events figcaption {
   display: flex;
   flex-direction: column;

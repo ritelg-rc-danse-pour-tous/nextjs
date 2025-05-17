@@ -63,6 +63,9 @@
   .event-show.programme figure {
     max-width: 95%;
   }
+  .events.event-show img {
+    max-width: 100%;
+  }
   .events.event-show figure {
     display: flex;
     flex-direction: column;
