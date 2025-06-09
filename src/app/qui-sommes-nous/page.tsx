@@ -85,6 +85,35 @@ export default async function about() {
       <section className="home-gallerie">
         <div>
           <Image
+            src="/images/mercus-01.jpeg"
+            alt="Rose et carlos"
+            width={800}
+            height={450}
+          />
+        </div>
+        <div className="home-flex">
+          <div>
+            <VideoYoutube
+              id="AK7g4B-Pfvw"
+              title="Yordanis delgado"
+              show={true}
+            />
+            <Image
+              src="/images/chateaux-roques/chateau-roques-1.jpg"
+              alt="Rose et carlos"
+              width={800}
+              height={450}
+            />
+          </div>
+          <Image
+            src="/images/chateaux-roques/chateau-roque-2.jpg"
+            alt="Rose et carlos"
+            width={800}
+            height={900}
+          />
+        </div>
+        <div>
+          <Image
             src="/images/rose-carlos-01.jpg"
             alt="Rose et carlos"
             width={1000}
