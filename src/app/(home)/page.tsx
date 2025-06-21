@@ -166,36 +166,7 @@ export default async function Home() {
         <div>
           <figure>
             <Image
-              src={"/images/chateaux-roques/21.jpeg"}
-              alt="Soirée 100%, 100% danse et repas aux chateaux de roques, à 09100 Teilhet"
-              width={802}
-              height={1134}
-            />
-            <figcaption>
-              <h3>Soirée 100% danse et repas</h3>
-              <div>
-                <p className="date">
-                  <img src="/images/date.svg" alt="" />
-                  24 Mai
-                </p>
-                <p className="address">
-                  <img src="/images/address.svg" alt="" />
-                  Chateaux de roques
-                </p>
-              </div>
-              <p>
-                50% Latino Salsa-Bachata-Kizomba <br />
-                50% Rock-Swing <br />
-                Animations, Initiations, Danses en lignes <br />
-              </p>
-              <a href="/events/soiree-chateaux-roques-24-05" className="btn">
-                En savoir plus ?
-              </a>
-            </figcaption>
-          </figure>
-          <figure>
-            <Image
-              src={"/images/laroque-1.jpg"}
+              src={"/images/fetes-musique-2025.jpeg"}
               alt="Fêtes de la musique carnavalesque à Laroque d’olmes"
               width={802}
               height={1134}
