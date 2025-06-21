@@ -221,7 +221,7 @@ export default async function Home() {
           </figure>
           <figure>
             <Image
-              src={"/images/mont-olmes.jpg"}
+              src={"/images/flyer-mont-dolmes.jpeg"}
               alt="Soirée 100%, 100% danse et repas aux chateaux de roques, à 09100 Teilhet"
               width={802}
               height={1134}
@@ -247,7 +247,6 @@ export default async function Home() {
                 <br />
                 Animations, Initiations
                 <br />
-                <strong>Infos à venir</strong>
               </p>
             </figcaption>
           </figure>
