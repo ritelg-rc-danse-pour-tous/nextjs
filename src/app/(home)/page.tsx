@@ -63,8 +63,13 @@ export default async function Home() {
       <section className="cours" id="nos-cours">
         <div>
           <h2>Nos cours de danses à la MJC Laroque d’olmes</h2>
+          <Image
+            src={"/images/flyer-1.jpeg"}
+            alt="Fêtes de la musique carnavalesque à Laroque d’olmes"
+            width={800}
+            height={1128}
+          />
           <p>
-            <br />
             De la Kizomba à la Bachata, en passant par la Salsa et le Rock, nous
             proposons des cours pour tous les goûts et tous les niveaux. Que
             vous soyez débutant ou confirmé, trouvez le cours qui vous
@@ -125,8 +130,12 @@ export default async function Home() {
           <figcaption>
             <h3>Kizomba</h3>
             <ul>
+              <strong>Lundi</strong>
+              <li>Débutant : 19h (avec Carlos)</li>
+            </ul>
+            <ul>
               <strong>Mercredi</strong>
-              <li>Tout niveau : 19h (avec Rose et Carlos)</li>
+              <li>Intermédiaire : 19h (avec Rose et Carlos)</li>
             </ul>
           </figcaption>
         </figure>
@@ -166,28 +175,14 @@ export default async function Home() {
         <div>
           <figure>
             <Image
-              src={"/images/fetes-musique-2025.jpeg"}
-              alt="Fêtes de la musique carnavalesque à Laroque d’olmes"
-              width={802}
-              height={1134}
+              src={"/images/flyer-2.jpeg"}
+              alt="Dates pour les soirées 2025-2026"
+              width={800}
+              height={1128}
             />
             <figcaption>
-              <h3>Fêtes de la musique</h3>
-              <div>
-                <p className="date">
-                  <img src="/images/date.svg" alt="" />
-                  20 Juin
-                </p>
-                <p className="address">
-                  <img src="/images/address.svg" alt="" />
-                  MJC de Laroque d’Olmes
-                </p>
-              </div>
-              <p>
-                Fêtes de la musique carnavalesque <br />
-                Animations et Démos <br />
-                <strong>Infos à venir</strong>
-              </p>
+              <h3>Soirées 2025/2026</h3>
+              <p>Infos à venir</p>
             </figcaption>
           </figure>
           <figure>

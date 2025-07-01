@@ -186,6 +186,13 @@ section.cours > div:not(figure) {
   align-items: center;
   flex-direction: column;
   // text-align: center;
+  h2 {
+    width: 100% !important;
+  }
+  img {
+    max-height: 500px;
+    width: auto;
+  }
 }
 section.cours figure {
   width: 100%;
@@ -233,6 +240,11 @@ section.cours figcaption {
 @media screen and (min-width: $width-desktop) {
   section.cours > *:not(figure) {
     width: 100%;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start !important;
+    gap: 1rem;
   }
   section.cours figure {
     align-items: flex-start;
