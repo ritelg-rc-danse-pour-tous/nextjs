@@ -175,44 +175,28 @@ export default async function Home() {
         <div>
           <figure>
             <Image
-              src={"/images/flyer-2.jpeg"}
-              alt="Dates pour les soirées 2025-2026"
+              src={"/images/stage-yordanis.jpeg"}
+              alt="Stage avec Yordanis Delgado"
               width={800}
               height={1128}
             />
             <figcaption>
-              <h3>Soirées 2025/2026</h3>
-              <p>Infos à venir</p>
-            </figcaption>
-          </figure>
-          <figure>
-            <Image
-              src={"/images/flyer-mont-dolmes.jpeg"}
-              alt="Soirée 100%, 100% danse et repas aux chateaux de roques, à 09100 Teilhet"
-              width={802}
-              height={1134}
-            />
-            <figcaption>
-              <h3>Soirées à thémes</h3>
-              <div>
-                <p className="date">
-                  <img src="/images/date.svg" alt="" />
-                  Juillet et Août
-                </p>
-                <p className="address">
-                  <img src="/images/address.svg" alt="" />
-                  Monts d’Olmes
-                </p>
-              </div>
+              <h3>Stages Salsa/Bachata avec Yordanis Delgado</h3>
               <p>
-                Soirées à thémes - Occitan,Basque,Espagnol,Ambiance du nord
+                🎉 ÇA VA SWINGER À LAROQUE D’OLMES ! 🎉
                 <br />
-                Juillet - Août , Tous les vendredi soir
+                Yordanis Delgado revient parmi nous le 10 janvier 2026 à la MJC
+                de Laroque d’Olmes — dès 14h30 ! 💃🕺
                 <br />
-                Barbecue Géant
+                Préparez vos chaussures, votre sourire et votre énergie : on va
+                faire chauffer la piste !<br />
+                ✨ Débutants bienvenus !<br />
+                Initiation Salsa & Bachata dès 10h avec Rose & Carlos — on vous
+                apprend les pas, on vou s fait rire, on vous fait danser !<br />
+                👉 Réservez vite au 07 75 67 57 31
                 <br />
-                Animations, Initiations
-                <br />
+                On vous attend pour une journée pleines de danses, et de bonne
+                humeur 😄
               </p>
             </figcaption>
           </figure>
