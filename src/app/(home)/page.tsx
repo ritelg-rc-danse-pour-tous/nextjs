@@ -48,11 +48,10 @@ export default async function Home() {
             <br />
             <br />
             <strong>
-              Retour de Yordanis Delgado sur plusieurs stages (salsa, rueda et
-              bachata dominicaine)
+              🎉 Cet été, on danse aux Monts d’Olmes avec Rose & Carlos ! 🎶
               <br />
-              De nouveaux intervenants en Kizomba et Bachata sensuelle :
-              calendrier et infos à venir.
+              Tous les vendredis du 10 juillet au 28 août 2026 — barbecue géant,
+              repas et soirée dansante en plein air !
             </strong>
           </p>
           <a href="/qui-sommes-nous#contact-form" className="btn">
@@ -175,28 +174,52 @@ export default async function Home() {
         <div>
           <figure>
             <Image
-              src={"/images/stage-yordanis.jpeg"}
-              alt="Stage avec Yordanis Delgado"
-              width={800}
-              height={1128}
+              src={"/images/event-mont-dolmes.jpeg"}
+              alt="Soirées dansantes aux Monts d’Olmes avec Rose & Carlos"
+              width={595}
+              height={842}
             />
             <figcaption>
-              <h3>Stages Salsa/Bachata avec Yordanis Delgado</h3>
+              <h3>Soirées dansantes aux Monts d’Olmes avec Rose & Carlos</h3>
               <p>
-                🎉 ÇA VA SWINGER À LAROQUE D’OLMES ! 🎉
+                🎉 Cet été, on danse aux Monts d’Olmes avec Rose & Carlos ! 🎶
                 <br />
-                Yordanis Delgado revient parmi nous le 10 janvier 2026 à la MJC
-                de Laroque d’Olmes — dès 14h30 ! 💃🕺
+                Cet été, la station des Monts d’Olmes s’anime tous les vendredis
+                du 10 juillet au 28 août 2026 pour des soirées inoubliables !
                 <br />
-                Préparez vos chaussures, votre sourire et votre énergie : on va
-                faire chauffer la piste !<br />
-                ✨ Débutants bienvenus !<br />
-                Initiation Salsa & Bachata dès 10h avec Rose & Carlos — on vous
-                apprend les pas, on vou s fait rire, on vous fait danser !<br />
-                👉 Réservez vite au 07 75 67 57 31
                 <br />
-                On vous attend pour une journée pleines de danses, et de bonne
-                humeur 😄
+                Au programme :
+                <br />
+                DJ Rose & Carlos aux platines
+                <br />
+                4 ambiances exceptionnelles :
+                <br />
+                🇫🇷 Ambiance Bretonne → 17 juillet
+                <br />
+                🇫🇷 Ambiance Occitane → 31 juillet
+                <br />
+                🇪🇸 Ambiance Basque → 14 août
+                <br />
+                🇪🇸 Ambiance Espagnole → 28 août
+                <br />
+                <br />
+                Et surtout : Barbecue géant + Repas + Soirée dansante en plein
+                air + Apéritifs à thèmes !
+                <br />
+                Un moment convivial en pleine montagne, à ne surtout pas manquer
+                !
+                <br />
+                <br />
+                📍 Monts d’Olmes
+                <br />
+                🗓 Tous les vendredis soir
+                <br />
+                🔗 Plus d’infos : www.rc-dansepourtous.fr
+                <br />
+                📞 06 88 51 17 15 ou 06 73 52 43 17
+                <br />
+                <br />
+                Venez nombreux, on vous attend pour danser tout l’été ! 💃🕺
               </p>
             </figcaption>
           </figure>
