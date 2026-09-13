@@ -7,33 +7,93 @@ $gradient2: linear-gradient(
 );
 .header {
   @extend %container;
+  position: relative;
+  overflow: hidden;
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
-  animation: background 8s infinite;
+  background-image: $gradient, url("/images/background-header-2.jpg");
   color: #fff;
 }
-// @media screen and (min-width: $width-desktop) {
-//   .header {
-//     animation: background 8s infinite;
-//   }
-// }
 
-@keyframes background {
-  0% {
+.header:not(.events-chateaux-roques)::before,
+.header:not(.events-chateaux-roques)::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-size: cover, cover;
+  pointer-events: none;
+}
+
+.header:not(.events-chateaux-roques)::before {
+  background-image: $gradient, url("/images/background-header-2.jpg");
+  animation: header-background-first 8s linear infinite;
+}
+
+.header:not(.events-chateaux-roques)::after {
+  background-image: $gradient, url("/images/background-header-1.jpg");
+  animation: header-background-second 8s linear infinite;
+}
+
+.header:not(.events-chateaux-roques) > * {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes header-background-first {
+  0%,
+  20%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  45% {
+    opacity: 0;
     background-image: $gradient, url("/images/background-header-2.jpg");
   }
-  25% {
-    background-image: $gradient, url("/images/background-header-1.jpg");
-  }
-  50% {
+  50%,
+  70% {
+    opacity: 1;
     background-image: $gradient, url("/images/background-header-3.jpg");
   }
-  75% {
+  75%,
+  95% {
+    opacity: 0;
+    background-image: $gradient, url("/images/background-header-3.jpg");
+  }
+}
+
+@keyframes header-background-second {
+  0%,
+  20%,
+  50%,
+  70%,
+  100% {
+    opacity: 0;
+  }
+  25%,
+  45% {
+    opacity: 1;
+    background-image: $gradient, url("/images/background-header-1.jpg");
+  }
+  75%,
+  95% {
+    opacity: 1;
     background-image: $gradient, url("/images/background-header-4.jpg");
   }
-  100% {
-    background-image: $gradient, url("/images/background-header-2.jpg");
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header:not(.events-chateaux-roques)::before,
+  .header:not(.events-chateaux-roques)::after {
+    animation: none;
+  }
+
+  .header:not(.events-chateaux-roques)::after {
+    display: none;
   }
 }
 //============================================
