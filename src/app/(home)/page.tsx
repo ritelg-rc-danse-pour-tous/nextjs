@@ -90,12 +90,12 @@ export default async function Home() {
             <h3>Bachata</h3>
             <ul>
               <strong>Lundi</strong>
-              <li>Intermédiaire : 21h (avec Carlos)</li>
-              <li>Avancé : 21h (avec Rose)</li>
+              <li>Bachata 2 : 21h-22h (Salle 1)</li>
+              <li>Bachata 3 : 21h-22h (Salle 2)</li>
             </ul>
             <ul>
               <strong>Mercredi</strong>
-              <li>Débutant : de 21h</li>
+              <li>Bachata 1 : 20h-21h (Salle 1)</li>
             </ul>
           </figcaption>
         </figure>
@@ -110,12 +110,12 @@ export default async function Home() {
             <h3>Salsa</h3>
             <ul>
               <strong>Lundi</strong>
-              <li>Intermédiaire : 20h (avec Rose)</li>
-              <li>Avancé : 20h (avec Carlos)</li>
+              <li>Salsa 2 : 20h-21h (Salle 1)</li>
+              <li>Salsa 3 : 20h-21h (Salle 2)</li>
             </ul>
             <ul>
               <strong>Mercredi</strong>
-              <li>Débutant : 21h (avec Rose)</li>
+              <li>Salsa 1 : 19h-20h (Salle 1)</li>
             </ul>
           </figcaption>
         </figure>
@@ -130,11 +130,11 @@ export default async function Home() {
             <h3>Kizomba</h3>
             <ul>
               <strong>Lundi</strong>
-              <li>Débutant : 19h (avec Carlos)</li>
+              <li>Intermédiaire : 19h-20h (Salle 1)</li>
             </ul>
             <ul>
               <strong>Mercredi</strong>
-              <li>Intermédiaire : 19h (avec Rose et Carlos)</li>
+              <li>Kizomba 1 : 20h-21h (Salle 2)</li>
             </ul>
           </figcaption>
         </figure>
@@ -143,12 +143,9 @@ export default async function Home() {
           <figcaption>
             <h3>Rock</h3>
             <ul>
-              <strong>Lundi</strong>
-              <li>Intermédiaire : 19h (avec Rose)</li>
-            </ul>
-            <ul>
               <strong>Mercredi</strong>
-              <li>Débutant : 20h (avec Carlos)</li>
+              <li>Rock 1 : 21h-22h (Salle 1)</li>
+              <li>Rock 2 : 21h-22h (Salle 2)</li>
             </ul>
           </figcaption>
         </figure>
@@ -164,7 +161,7 @@ export default async function Home() {
             <p>Valse, Tango, Quick step</p>
             <ul>
               <strong>Mercredi</strong>
-              <li>Tout niveau : 20h</li>
+              <li>19h-20h (Salle 2)</li>
             </ul>
           </figcaption>
         </figure>
@@ -174,52 +171,43 @@ export default async function Home() {
         <div>
           <figure>
             <Image
-              src={"/images/event-mont-dolmes.jpeg"}
-              alt="Soirées dansantes aux Monts d’Olmes avec Rose & Carlos"
-              width={595}
-              height={842}
+              src={"/images/flyer-soiree.jpeg"}
+              alt="Flyer des soirées multi-danses avec swing de R&C Danse pour tous"
+              width={604}
+              height={850}
             />
             <figcaption>
-              <h3>Soirées dansantes aux Monts d’Olmes avec Rose & Carlos</h3>
+              <h3>Nos soirées multi-danses avec swing</h3>
               <p>
-                🎉 Cet été, on danse aux Monts d’Olmes avec Rose & Carlos ! 🎶
-                <br />
-                Cet été, la station des Monts d’Olmes s’anime tous les vendredis
-                du 10 juillet au 28 août 2026 pour des soirées inoubliables !
+                Venez partager six soirées conviviales autour de la danse, de la
+                bachata au rock en passant par la salsa, la kizomba et le swing.
                 <br />
                 <br />
-                Au programme :
+                🗓 Les prochaines dates :
                 <br />
-                DJ Rose & Carlos aux platines
+                Samedi 3 octobre
                 <br />
-                4 ambiances exceptionnelles :
+                Samedi 28 novembre
                 <br />
-                🇫🇷 Ambiance Bretonne → 17 juillet
+                Samedi 30 janvier
                 <br />
-                🇫🇷 Ambiance Occitane → 31 juillet
+                Samedi 6 mars
                 <br />
-                🇪🇸 Ambiance Basque → 14 août
+                Samedi 24 avril
                 <br />
-                🇪🇸 Ambiance Espagnole → 28 août
-                <br />
-                <br />
-                Et surtout : Barbecue géant + Repas + Soirée dansante en plein
-                air + Apéritifs à thèmes !
-                <br />
-                Un moment convivial en pleine montagne, à ne surtout pas manquer
-                !
+                Samedi 29 mai
                 <br />
                 <br />
-                📍 Monts d’Olmes
+                💃 De 20h à 21h, découvrez une initiation à une danse différente
+                lors de chaque rendez-vous.
                 <br />
-                🗓 Tous les vendredis soir
-                <br />
-                🔗 Plus d’infos : www.rc-dansepourtous.fr
-                <br />
-                📞 06 88 51 17 15 ou 06 73 52 43 17
+                🎶 De 21h à minuit, profitez d’une soirée multi-danses ouverte à
+                toutes et à tous.
                 <br />
                 <br />
-                Venez nombreux, on vous attend pour danser tout l’été ! 💃🕺
+                Les lieux changent selon les dates. Consultez notre site
+                internet ou notre page Facebook pour connaître toutes les
+                informations.
               </p>
             </figcaption>
           </figure>
