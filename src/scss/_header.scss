@@ -1,9 +1,9 @@
 $color: #151515;
-$gradient: linear-gradient(90deg, rgba($color, 0.1) 0%, rgba($color, 0.1) 100%);
+$gradient: linear-gradient(90deg, rgba($color, 0.3) 0%, rgba($color, 0.3) 100%);
 $gradient2: linear-gradient(
   90deg,
-  rgba($color, 0.7) 0%,
-  rgba($color, 0.7) 100%
+  rgba($color, 0.9) 0%,
+  rgba($color, 0.9) 100%
 );
 .header {
   @extend %container;
@@ -264,6 +264,35 @@ $gradient2: linear-gradient(
   }
 }
 
+.banner .event-highlight {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  background-color: rgba(#fff, 0.08);
+  border-left: 3px solid $color-alt;
+  border-radius: 4px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.banner .banner-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.banner .image {
+  margin-top: 2rem;
+  max-width: 220px;
+  width: 100%;
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+  }
+}
+
 @media screen and (min-width: $width-desktop) {
   .banner h1 {
     text-align: left;
@@ -272,13 +301,21 @@ $gradient2: linear-gradient(
   .banner.header-event-show {
     margin: 4rem 0;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     & > div {
-      width: 49%;
+      width: 62%;
     }
     & > .image {
-      width: 45%;
+      width: 40%;
+      max-width: 380px;
       margin: 0;
     }
+  }
+
+  .banner .event-highlight,
+  .banner .banner-actions {
+    text-align: left;
+    justify-content: flex-start;
   }
 }

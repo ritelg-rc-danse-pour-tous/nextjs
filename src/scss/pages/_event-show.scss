@@ -84,6 +84,66 @@
 }
 
 //============================================
+//		Event intervenants
+//============================================
+.event-intervenants {
+  margin: 3rem auto;
+  text-align: center;
+  background-color: #fff;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  padding: 2rem 1.5rem;
+  h2 {
+    margin-top: 0;
+  }
+  .event-intervenants-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  img {
+    max-width: 100%;
+    width: 380px;
+    height: auto;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    flex-shrink: 0;
+  }
+  p {
+    max-width: 600px;
+    margin: 0;
+    text-align: center;
+  }
+  .video-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: $border-radius;
+    overflow: hidden;
+    box-shadow: $box-shadow;
+  }
+}
+@media screen and (min-width: $width-desktop) {
+  .event-intervenants {
+    padding: 3rem;
+    .event-intervenants-content {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+    }
+    img {
+      width: 42%;
+    }
+    p {
+      width: 50%;
+      text-align: left;
+    }
+  }
+}
+
+//============================================
 //		Events Programme
 //============================================
 .event-programme {

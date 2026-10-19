@@ -2,6 +2,7 @@ import { Nav } from "@/components/common";
 import { env } from "@/utils/env";
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 const titre = "Accueil - R&C Danse pour tous";
 const description =
   "Rose Marie et Carlos LAMEGO, professeurs de Danses passionnés par les Danse de Couple, nous enseignons depuis 1991 de nombreuses danses Latines et Standards y compris salsa, bachata et kizomba, En plus d’être chacun diplômés de l’Institut de Formation en Danses de Société de Toulouse, d’avoir obtenue notre Monitorat (1994) et notre Professorat (1996), nous avons été formés par des grands noms de la Danse tel que Christian Dubar, Elisabeth Béclier et Charly Moser, Nous donnons des cours dans toute l‘Ariège de Lavelanet jusqu’a Pamiers en passant par Verniolle, Laroque d’Olmes, Prayols, Mercus et St Girons.. Aujourd’hui, nous animons de nombreux évènements afin de partager le plaisir de la Danse avec vous !";
@@ -32,31 +33,50 @@ export default async function Home() {
     <>
       <header className="header">
         <Nav />
-        <div className="banner">
-          <h1>
-            <span>Bienvenue dans la</span> Danse
-          </h1>
-          <p>
-            Plongez dans l’univers envoûtant de la danse avec l’association R&C
-            Danse pour tous ! <br />
-            De la sensualité de la Bachata à l’énergie du Rock, en passant par
-            la chaleur de la Salsa et l’élégance de la Kizomba, nous vous
-            invitons à explorer, apprendre et partager notre univers de la
-            danse.
-            <br /> Rejoignez-nous pour des moments inoubliables et laissez-vous
-            emporter par le rythme et la magie de nos cours et événements !
-            <br />
-            <br />
-            <strong>
-              🎉 Cet été, on danse aux Monts d’Olmes avec Rose & Carlos ! 🎶
+        <div className="banner header-event-show">
+          <div>
+            <h1>
+              <span>Bienvenue dans la</span> Danse
+            </h1>
+            <p>
+              Plongez dans l’univers envoûtant de la danse avec l’association
+              R&C Danse pour tous ! <br />
+              De la sensualité de la Bachata à l’énergie du Rock, en passant par
+              la chaleur de la Salsa et l’élégance de la Kizomba, nous vous
+              invitons à explorer, apprendre et partager notre univers de la
+              danse.
+              <br /> Rejoignez-nous pour des moments inoubliables et
+              laissez-vous emporter par le rythme et la magie de nos cours et
+              événements !
+            </p>
+            <p className="event-highlight">
+              🔥 Stages Salsa, Bachata & Kizomba + Soirée SBK & Rock avec Nika &
+              Sergi Martinez
               <br />
-              Tous les vendredis du 10 juillet au 28 août 2026 — barbecue géant,
-              repas et soirée dansante en plein air !
-            </strong>
-          </p>
-          <a href="/qui-sommes-nous#contact-form" className="btn">
-            Nous contacter
-          </a>
+              📅 Samedi 14 novembre 2026 — 📍 ADN New Age, Verniolle (09)
+            </p>
+            <div className="banner-actions">
+              <a href="/qui-sommes-nous#contact-form" className="btn">
+                Nous contacter
+              </a>
+              <a
+                href="https://www.helloasso.com/associations/retc-danse-pour-tous/evenements/stage-nika-et-sergi"
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-event"
+              >
+                Réserver le 14 novembre
+              </a>
+            </div>
+          </div>
+          <div className="image">
+            <Image
+              src={"/images/flyer-adn-14_11-1.jpeg"}
+              alt="Flyer des stages et de la soirée SBK & Rock avec Nika & Sergi Martinez le 14 novembre 2026 à l’ADN New Age, Verniolle"
+              width={800}
+              height={1128}
+            />
+          </div>
         </div>
       </header>
       <section className="cours" id="nos-cours">
@@ -209,6 +229,50 @@ export default async function Home() {
                 internet ou notre page Facebook pour connaître toutes les
                 informations.
               </p>
+            </figcaption>
+          </figure>
+          <figure>
+            <Image
+              src={"/images/flyer-adn-14_11-1.jpeg"}
+              alt="Flyer des stages et de la soirée SBK & Rock avec Nika & Sergi Martinez le 14 novembre 2026 à l’ADN New Age, Verniolle"
+              width={800}
+              height={1128}
+            />
+            <figcaption>
+              <h3>
+                Stages Salsa, Bachata & Kizomba + Soirée SBK & Rock avec Nika &
+                Sergi Martinez
+              </h3>
+              <p>
+                🔥 Boostez votre style avec Nika & Sergi Martinez, tout droit
+                venus d’Espagne !
+                <br />
+                <br />
+                📅 Samedi 14 novembre 2026
+                <br />
+                📍 ADN New Age – Verniolle (09)
+                <br />
+                <br />
+                5h30 de stages de Salsa, Bachata et Kizomba, puis dès 21h30 :
+                soirée Salsa, Bachata, Kizomba, Latino et Rock avec animations
+                et démonstrations de Nika & Sergi !
+                <br />
+                <br />
+                ⚠️ Réservation avant le 7 novembre au plus tard.
+              </p>
+              <div className="banner-actions">
+                <Link href="/events/stage-nika-et-sergi-14-11" className="btn">
+                  En savoir plus
+                </Link>
+                <a
+                  href="https://www.helloasso.com/associations/retc-danse-pour-tous/evenements/stage-nika-et-sergi"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn btn-event"
+                >
+                  Réserver
+                </a>
+              </div>
             </figcaption>
           </figure>
         </div>
